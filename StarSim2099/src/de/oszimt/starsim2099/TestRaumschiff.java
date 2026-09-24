@@ -12,7 +12,7 @@ public class TestRaumschiff {
 		int winkel = 123;
 
 		
-		Raumschiff meinRaumschiff = new Raumschiff();
+		Raumschiff meinRaumschiff = new Raumschiff(posX,posY,maxKapazitaet,typ,antrieb,winkel);
 		meinRaumschiff.setTyp(typ);
 		meinRaumschiff.setAntrieb(antrieb);
 		meinRaumschiff.setMaxkapazitaet(maxKapazitaet);

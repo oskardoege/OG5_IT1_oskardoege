@@ -6,7 +6,7 @@ package de.oszimt.starsim2099;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Planet {
+public class Planet extends MasterOfDesaster {
 
 	// Attribute
 	private double posx;

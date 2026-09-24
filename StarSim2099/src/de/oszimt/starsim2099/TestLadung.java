@@ -4,16 +4,16 @@ public class TestLadung {
 
 	public static void main(String[] args) {
 
-		double posX = (double)(Math.random() * 160);
-		double posY = (double)(Math.random() * 50);
+		double posx = (double)(Math.random() * 160);
+		double posy = (double)(Math.random() * 50);
 		int masse = 122;
 		String typ = "Test-Ladung (gepunktet)";
 		
-		Ladung meineLadung = new Ladung();
+		Ladung meineLadung = new Ladung(posx,posy,masse,typ);
 		meineLadung.setTyp(typ);
 		meineLadung.setMasse(masse);
-		meineLadung.setPosX(posX);
-		meineLadung.setPosY(posY);
+		meineLadung.setPosx(posx);
+		meineLadung.setPosy(posy);
 		
 		if (meineLadung.getTyp().equals(typ))
 			System.out.println("Implementierung 'Typ'  korrekt!");
@@ -21,10 +21,10 @@ public class TestLadung {
 		if (meineLadung.getMasse() == masse)
 			System.out.println("Implementierung 'Masse'  korrekt!");
 		
-		if (meineLadung.getPosX() == posX)
+		if (meineLadung.getPosx() == posy)
 			System.out.println("Implementierung 'Position X' korrekt!");
 		
-		if (meineLadung.getPosY() == posY)
+		if (meineLadung.getPosy() == posy)
 			System.out.println("Implementierung 'Position Y' korrekt!");
 
 	}
