@@ -7,11 +7,10 @@ public class Primzahlen {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        System.out.print("Startzahl eingeben: ");
+        System.out.print("Zahl eingeben: ");
         long a = s.nextLong();
 
-        // 10 Durchgänge
-        for (int durchgang = 1; durchgang <= 6; durchgang++) {
+       
 
             long startZeit = System.nanoTime();
 
@@ -22,14 +21,13 @@ public class Primzahlen {
             long dauerNano = endZeit - startZeit;
             double dauerMilli = dauerNano / 1_000_000.0;
 
-            System.out.println("Durchgang: " + durchgang);
-            System.out.println("Zahl: " + a);
+            
             System.out.println("Primzahl: " + ergebnis);
             System.out.println("Laufzeit: " + dauerMilli + " Millisekunden");
-            System.out.println("-------------------------");
+            
 
            
-        }
+        
 
         s.close();
     }
