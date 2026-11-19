@@ -11,18 +11,13 @@ public class Testprotokoll {
 
         
         long[] testwerte = {
-            a[0],
-            a[ANZAHL / 2],
-            a[ANZAHL - 1],
-            -1
+             1000000,  2000000,  3000002,  4000001,  5000000,  6000000,
+             7000000,  8000002,  9000000,  10000001,  11000001,  12000000,  13000000,
+             14000000,  15000000,  16000001,  17000002,  18000000,  19000001,
+            a[ANZAHL - 1],  -1
         };
 
-        String[] testnamen = {
-            "Erste Zahl",
-            "Mittlere Zahl",
-            "Letzte Zahl",
-            "Nicht vorhandene Zahl"
-        };
+        
 
         
         System.out.println("Anzahl Elemente: " + ANZAHL);
@@ -31,8 +26,8 @@ public class Testprotokoll {
 
             long gesucht = testwerte[i];
 
-            System.out.println("\nTest: " + testnamen[i]);
-            System.out.println("Gesuchte Zahl: " + gesucht);
+            System.out.println("\nTest: " );
+            System.out.println(gesucht + ":");
 
             
             long startLinear = System.nanoTime();
@@ -54,12 +49,12 @@ public class Testprotokoll {
             System.out.println("\nLinearsuche:");
             System.out.println("Index: " + indexLinear);
             System.out.println("Zeit: " +
-                (endeLinear - startLinear) / 1000 + " µs");
+                (endeLinear - startLinear) / 1000 + " ns");
 
             System.out.println("\nInterpolationssuche:");
             System.out.println("Index: " + indexInterpolation);
             System.out.println("Zeit: " +
-                (endeInterpolation - startInterpolation) / 1000 + " µs");
+                (endeInterpolation - startInterpolation) / 1000 + " ns");
 
            
         }
